@@ -288,7 +288,8 @@
                 <div class="container" >
                 <div class="row">
                       <div class="col-md-7 " >
-                                    <div class="alt-font  text-extra-dark-gray  margin-15px-bottom abouttext" >About<span class="unhideit"></br></span><span style= "font-family:Comic Neue;"> Reach he</span><span id = 'content2'>ART </span> <span id="updated2"> </span></div>
+                                    <div class="alt-font  text-extra-dark-gray  margin-15px-bottom abouttext" >About<span class="unhideit"></br></span>
+                                     <span style= "font-family:Comic Neue;" id = 'content2'> Reach heART <span id="updated2"> </span></div>
                                     <div class="separator-line-horrizontal-medium-light bg-deep-pink margin-10px-top"></div>
                                     <div class="col-md-12 wow fadeInRight " style="padding-bottom: 20px">
                                       <p class="text-medium text-extra-dark-gray  line-height-28 margin-30px-top"  style='font-family: Didact Gothic; font-size: 25px; font-weight:300;margin-bottom:40px;line-height:40px'><span style= "font-family:Comic Neue;font-weight:900">Reach heART</span>
@@ -584,8 +585,8 @@
       <section class="wow fadeIn color-code lg-no-background-img " data-color="6" style="background: url('images/art2.png') top right no-repeat ; ">
             <div class="container" style='margin-top:0px'>
                 <div class="row justify-content-center">
-                  <div class="col-12 col-lg-9 col-md-10 text-center shiftcolor">
-                    <span class="alt-font text-medium margin-5px-bottom d-block pointsection"  ><span style="color:white">Contact Us!</span></span><br><br>
+                  <div class="col-12 col-lg-9 col-md-10 text-center ">
+                    <span class="alt-font text-medium margin-5px-bottom d-block pointsection"  ><span style="color:#ff9a00">Contact Us!</span></span><br><br>
                   </div>
 
                 <!-- <form id="contact-form" action="javascript:void(0)" method="post"> -->
@@ -600,10 +601,10 @@
                         <!-- </div> -->
                     <!-- </div> -->
                 <!-- </form> -->
-                <div class="col-md-12 col-lg-9 col-md-10 text-center shiftcolor" >
-                    <div> <a href="mailto:reach1heart@gmail.com?subject=Mail" class='emailfont'> reach1heart@gmail.com </a> </div>
-                    <a href="https://www.facebook.com/REACH-HEART-102506281403707" title="Facebook" target="_blank"><i class="fab fa-facebook " aria-hidden="true" style='font-size: 50px;color:white; padding:10px; margin-top:30px'></i></a>
-                    <a href="https://www.instagram.com/reach1heart/" title="Dribbble" target="_blank"><i class="fab fa-instagram"  style='font-size: 50px;color:white; padding:10px; margin-top:30px'></i></a>
+                <div class="col-md-12 col-lg-9 col-md-10 text-center " >
+                    <div> <a href="mailto:reach1heart@gmail.com?subject=Mail" class='emailfont text-deep-pink'> reach1heart@gmail.com </a> </div>
+                    <a href="https://www.facebook.com/REACH-HEART-102506281403707" title="Facebook" target="_blank"><i class="fab fa-facebook text-deep-pink" aria-hidden="true" style='font-size: 50px; padding:10px; margin-top:30px'></i></a>
+                    <a href="https://www.instagram.com/reach1heart/" title="Dribbble" target="_blank"><i class="fab fa-instagram text-deep-pink"  style='font-size: 50px; padding:10px; margin-top:30px'></i></a>
                 </div>
                 </div>
             </div>
@@ -688,6 +689,8 @@ if (colors.indexOf("green") > -1) {
 }
 document.getElementById("updated").innerHTML = str;
 
+    
+    
 var text = document.getElementById("content2");
 var str = text.innerHTML,
     reg = /red|blue|green|orange/ig; //g is to replace all occurances
@@ -708,10 +711,8 @@ if (colors.indexOf("orange") > -1) {
     str = str.replace(/T/g, '<span style="color:#ff9a00;font-family:Comic Neue;">T</span>');
 }
 if (colors.indexOf("green") > -1) {
-    str = str.replace(/reach he/g, '<span style="color:black;font-family:Comic Neue;position:relative; right:-4px">Reach he</span>');
+    str = str.replace(/Reach he/g, '<span style="color:black;font-family:Comic Neue;">Reach he</span>');
 }
-
-
 
 document.getElementById("updated2").innerHTML = str;
 
@@ -772,19 +773,7 @@ display:none
   font-weight: 900;
   /* font-style:  italic */
 }
-
-.shiftcolor{
-    background-color:transparent
-    }
- 
-    
-@media only screen and (max-width: 991.98px) {
-.shiftcolor {
-  background-color:#65bfd0;
-  padding: 20px;
-}
-}
-    
+  
     
 @media only screen and (max-width: 991.98px) {
 .mbw {
