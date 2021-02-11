@@ -584,7 +584,7 @@
       <section class="wow fadeIn color-code lg-no-background-img " data-color="6" style="background: url('images/art2.png') top right no-repeat ; ">
             <div class="container" style='margin-top:0px'>
                 <div class="row justify-content-center">
-                  <div class="col-12 col-lg-9 col-md-10 text-center">
+                  <div class="col-12 col-lg-9 col-md-10 text-center shiftcolor">
                     <span class="alt-font text-medium margin-5px-bottom d-block pointsection"  ><span style="color:white">Contact Us!</span></span><br><br>
                   </div>
 
@@ -600,7 +600,7 @@
                         <!-- </div> -->
                     <!-- </div> -->
                 <!-- </form> -->
-                <div class="col-md-12 col-lg-9 col-md-10 text-center" >
+                <div class="col-md-12 col-lg-9 col-md-10 text-center shiftcolor" >
                     <div> <a href="mailto:reach1heart@gmail.com?subject=Mail" class='emailfont'> reach1heart@gmail.com </a> </div>
                     <a href="https://www.facebook.com/REACH-HEART-102506281403707" title="Facebook" target="_blank"><i class="fab fa-facebook " aria-hidden="true" style='font-size: 50px;color:white; padding:10px; margin-top:30px'></i></a>
                     <a href="https://www.instagram.com/reach1heart/" title="Dribbble" target="_blank"><i class="fab fa-instagram"  style='font-size: 50px;color:white; padding:10px; margin-top:30px'></i></a>
@@ -617,7 +617,7 @@
           <footer class="footer-center-logo padding-five-tb sm-padding-30px-tb">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-12 col-md-12 text-center text-white-2" style="font-weight:900; font-family:Didact Gothic; font-size:17px">
+                    <div class="col-lg-12 col-md-12 text-center text-white-2 shiftcolor" style="font-weight:900; font-family:Didact Gothic; font-size:17px">
                         <span>Website Design:<a href="https://calibri.co/" class="text-white-2" target="_blank" title=""> Calibri Inc.</a></span><br>
                         <span> <a href="mailto:info@calibri.co?subject=Mail" class="text-white-2" target="_blank" title=""> info@calibri.co </a></span>
                         <span>|<a href="https://calibri.co/" class="text-white-2" target="_blank" title=""> calibri.co</a></span><br>
@@ -708,7 +708,7 @@ if (colors.indexOf("orange") > -1) {
     str = str.replace(/T/g, '<span style="color:#ff9a00;font-family:Comic Neue;">T</span>');
 }
 if (colors.indexOf("green") > -1) {
-    str = str.replace(/about reach he/g, '<span style="color:black;font-family:Comic Neue;position:relative; right:-4px">About Reach he</span>');
+    str = str.replace(/reach he/g, '<span style="color:black;font-family:Comic Neue;position:relative; right:-4px">Reach he</span>');
 }
 
 
@@ -747,7 +747,7 @@ display:none
 display:none
 }}
 
-    
+  
 .pointsection{
   color:black;
   font-size: 65px ;
@@ -773,7 +773,19 @@ display:none
   /* font-style:  italic */
 }
 
-
+.shiftcolor{
+    background-color:transparent
+    }
+ 
+    
+@media only screen and (max-width: 991.98px) {
+.shiftcolor {
+  background-color:#65bfd0;
+  padding: 20px;
+}
+}
+    
+    
 @media only screen and (max-width: 991.98px) {
 .mbw {
   background-color:white !important;
